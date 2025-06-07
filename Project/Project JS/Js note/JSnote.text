@@ -1,0 +1,111 @@
+
+1.What is JavaScript?
+-> JavaScript is a single threaded programming language used to add interactivity in web pages.
+
+2.Who is JavaScript founder?
+-> Brendan Eich
+
+3.ES full form?
+-> ECMA Script
+
+4.ES6 Key Features :-
+-> 1.Let & Const
+   2.Arrow functions
+   3.Classes
+   4.Modules
+   5.Template literals
+
+5.JavaScript written method :-
+-> JavaScript written method is two (02) :-
+   1.Internal
+   2.External
+
+6.What is a Console?
+-> Console is an object.
+-> The console object in JavaScript provides access to the browser's debugging console.
+
+7.Console Common Method :-
+-> 1.Console.log()
+   2.Console.warn()
+   3.console.error()
+
+8.JS in Inbuilt Function :-
+-> 1.alert (Output :- Undefined)
+   2.Prompt (Output :- Value) (Data type :- String)
+   3.Confirm (Output :- True/False) (Data type :- Boolean) 
+
+9.What is a Variable?
+-> A container to store some value.
+
+10.How many keyword used to create variables in JS?
+-> There are three (03) keywords :-
+   1.Var
+   2.Let
+   3.Const
+
+11.What is a Var?
+-> Var variable in Re-declaration and Re-initialization both are possible.
+
+12.What is a Let?
+-> Let variable in Re-declaration is not possible but Re-initialization is Possible.
+
+13.What is a Const?
+-> Const variable in Re-declaration and Re-initialization both are not possible.
+
+14.Nan full form :-
+-> Not a Number
+
+15.How many Data types in JS?
+-> JS in two (02) Types of data types :-
+   1. Primitive
+   2. Non-Primitive
+
+16.How many types in primitive?
+-> There are seven (07) types :-
+   1.String
+   2.Number
+   3.Boolaen
+   4.Null
+   5.Undefined
+   6.Symbol
+   7.Bigint
+
+17.How many types in non-primitive?
+-> Object/Array
+
+18.How to check data type?
+-> Check the data type we can use typeof() functions.
+
+19.How many types of Operators?
+->There are four (04) types of Operators :-
+  1.Arithmetic (+,-,*,/)
+  2.Comparison (<,>,<=,>=,!,!=,==,===)
+  3.Logical (&&,||)
+  4.Assigment (+=,-=,=)
+
+20.What is a ==?
+-> == Compare the value.
+
+21.What is a ===?
+-> === Compare the data type and value both
+
+22.What is an Implicit?
+-> Implicit is automatically convert data type in JS.
+
+23.What is an Explicit?
+-> Explicit is Converting a value from data type to another.
+
+24.What is a null?
+-> Null is an explicit value representing.
+
+25.What is a undefined?
+-> Undefined is a property of the global object.
+-> That is, it is a variable in global scope.
+
+26. What is a Template literals?
+-> Template literals are a JS feature introduced in ES6 (ECMA Script in 2015).
+
+27.How many type conversion?
+-> There are two (02) type of conversion :-
+   1.Implicit
+   2.Explicit
