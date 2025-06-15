@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCI : The Board of Control for Cricket in India</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!--nav1-->
+    <nav class="w-full fixed flex justify-between items-center bg-[#0f235a] z-99">
+        <div class="flex gap-3">
+            <img src="./img/logo.webp" alt="" class="w-10 mx-12 max-sm:mx-3 max-sm:w-8 max-md:mx-5 max-lg:mx-5 max-xl:mx-6">
+            <h1 class="text-white text-[20px] font-[600] border-b-5 border-[#c65142] max-sm:hidden max-md:hidden">International</h1>
+            <h1 class="text-white text-[20px] font-[600] max-sm:hidden max-md:hidden">Domestic</h1>
+        </div>
+        <div class="flex h-15 max-sm:h-12">
+            <div class="flex justify-center items-center border-1 border-[#27396b] w-15 max-sm:w-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="max-sm:w-5 max-sm:h-5" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0"/></svg>
+            </div>
+            <div class="flex justify-center items-center border-1 border-[#27396b] w-20 max-sm:w-16">
+                <img src="./img/ipl.webp" alt="" class="w-13 max-sm:w-11">           
+             </div>
+            <div class="flex justify-center items-center border-1 border-[#27396b] w-23 max-sm:w-18">
+                <img src="./img/tata.webp" alt="" class="w-14 max-sm:w-11">
+            </div>
+            <div class="flex justify-center items-center border-1 border-[#27396b] w-15 max-sm:w-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" class="max-sm:w-6 max-sm:h-6" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8.5h16m-16 7h16" color="#fff"/></svg>
+            </div>
+            <div class="flex justify-center items-center text-white border-1 border-[#27396b] w-17 max-sm:w-14 max-sm:text-xs">
+                <select name="" id="">
+                    <option value="">EN</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <!--nav1-->
+
+    <!--nav2-->
+    <nav-2 class="w-full mt-15 bg-white fixed flex shadow-lg max-sm:hidden z-99">
+        <div class="men bg-[#c65142] px-10 py-2 font-semibold text-white text-[18px] max-md:hidden max-lg:hidden max-xl:hidden">
+            <h1>MEN</h1>
+        </div>
+        <div class="px-7 py-2 font-semibold border-r-1 border-gray-200 text-black text-[18px] max-md:hidden max-lg:hidden max-xl:hidden">
+            <h1>WOMEN</h1>
+        </div>
+        <ul class="flex justify-center items-center ml-8 gap-7 font-semibold text-[#5b5b5b] max-md:text-sm max-md:gap-5 max-md:py-2 max-md:ml-6 max-lg:py-2 max-lg:text-sm max-lg:ml-6 max-xl:py-2">
+            <li><a href="">News</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Fixtures and Results</a></li>
+            <li><a href="">Series and Tournament</a></li>
+            <li><a href="">Archive</a></li>
+            <li><a href="">Players</a></li>
+            <li><a href="" class="max-md:hidden">Ranking</a></li>
+            <li><a href="" class="max-md:hidden max-lg:hidden">States</a></li>
+        </ul>
+    </nav-2>
+    <!--nav2-->
+
+    <!--nav3-->
+    <div class="flex pt-27.5 gap-8 pl-5 text-[#133F7E] font-semibold text-sm max-sm:hidden max-md:text-xs max-md:pt-26 max-md:justify-center max-md:gap-5 max-md:pl-1 max-lg:gap-6   max-lg:justify-center max-lg:p-1 max-lg:text-xs max-lg:pt-26">
+        <div class="bg-[#a0c7ff] rounded-full py-1 px-5">Quick Links</div>
+        <div class="py-1 flex items-center gap-2 max-md:hidden">Apex Council Members <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 15 15"><path fill="none" stroke="#133F7E" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1"/></svg></div>
+        <div class="py-1 flex items-center gap-2">International Results <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 15 15"><path fill="none" stroke="#133F7E" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1"/></svg></div>
+        <div class="py-1 flex items-center gap-2">Domestic Schedule <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 15 15"><path fill="none" stroke="#133F7E" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1"/></svg></div>
+        <div class="py-1 flex items-center gap-2">Documents <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 15 15"><path fill="none" stroke="#133F7E" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1"/></svg></div>
+        <div class="py-1 flex items-center gap-2 max-lg:hidden">Tenders <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 15 15"><path fill="none" stroke="#133F7E" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1"/></svg></div>
+        <div class="py-1 flex items-center gap-2 max-md:hidden max-lg:hidden max-xl:hidden">Jobs<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 15 15"><path fill="none" stroke="#133F7E" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1"/></svg></div>
+    </div>
+    <!--nav3-->
+
+    <!-- main -->
+    <div class="bg-[#e9ecf4] p-4 max-sm:w-321 max-sm:pt-15 max-sm:px-4 max-md:w-317 max-lg:w-317">
+        <div class="main relative">
+            <div class="flex absolute bottom-20 left-10">
+                <span class="bg-[#c65142] inline-block w-1.5 h-27"></span>
+                <div class="ml-4 text-[13px]">
+                    <span class="text-white bg-[#c65142] px-1 py-[1px] rounded-sm">News</span>
+                    <h1 class="text-white text-[30px] font-bold mt-1">Top Honour: MS Dhoni Inducted into ICC HALL of Fame</h1>
+                    <div class="flex gap-3 text-white text-[15px] mt-2">
+                        <p>9th jun, 2025</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M16.5 2.25a3.25 3.25 0 0 0-3.2 3.824L8.57 9.386l-.068.053a3.25 3.25 0 1 0 0 5.121l.068.054l4.73 3.312q-.05.28-.05.574a3.25 3.25 0 1 0 .667-1.973L9.438 13.39c.2-.422.312-.893.312-1.391s-.112-.97-.312-1.391l4.48-3.136A3.25 3.25 0 1 0 16.5 2.25M14.75 5.5a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0M6.5 10.25a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m10 6.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5" clip-rule="evenodd"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[95%] flex justify-between items-center gap-2 absolute bottom-10 left-10">
+                <div class="flex gap-2">
+                    <div class="w-[55px] h-[1px] bg-[#fff]"></div>
+                    <div class="w-[55px] h-[1px] bg-[#fff]"></div>
+                    <div class="w-[55px] h-[1px] bg-[#fff]"></div>
+                    <div class="w-[55px] h-[1px] bg-red-400"></div>
+                    <div class="w-[55px] h-[1px] bg-[#fff]"></div>
+                    <div class="w-[55px] h-[1px] bg-[#fff]"></div>
+                </div>
+                <div class="flex gap-3 max-sm:hidden max-md:hidden max-lg:hidden">
+                    <div class="border-1 border-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="m13.292 12l-4.6-4.6l.708-.708L14.708 12L9.4 17.308l-.708-.708z"/></svg>
+                    </div>
+                     <div class="border-1 border-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M14 17.308L8.692 12L14 6.692l.708.708l-4.6 4.6l4.6 4.6z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+
+    <!--matches-->
+    <div class="px-5 py-10 max-sm:w-317 max-sm:pr-0 max-md:w-317 max-lg:w-317">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-3xl font-semibold">Matches</h1>
+                <div class="flex gap-12 ml-30">
+                    <h2 class="border-b-2 font-semibold text-[#2255A4] cursor-pointer">Fixtures</h2>
+                    <h2 class="text-[#7f7f7f] font-semibold hover:text-[#2255A4] hover:border-b-2 hover:duration-200 cursor-pointer">Results</h2>
+                </div>
+            </div>
+            <div class="flex items-center gap-7 max-sm:pr-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"><path fill="none" stroke="#7f7f7f" stroke-linecap="square" d="M10 14L3 7.5L10 1" stroke-width="1.5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"><path fill="none" stroke="#000" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1.5"/></svg>
+                <div class="flex items-center gap-2 font-semibold text-[#7f7f7f] text-xs">SEE ALL
+                    <div class="w-6 h-6 rounded-full border-1 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="#7f7f7f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg></div>
+                </div>
+            </div>
+        </div>
+        <!--match card-->
+        <div class="card py-5 flex gap-7 overflow-x-scroll">
+            <div class="w-[617px] h-[265px] bg-[#262d41] rounded-r-xl flex relative">
+                <div class="w-6 bg-[#c4a13e]">
+                    <h1 class="absolute -rotate-90 top-[11%] left-[-2.3%]">1st Test</h1>
+                </div>
+                <div>
+                    <div class="w-[592px] h-[66px] flex items-center justify-between px-4 text-[15px]">
+                        <h1 class="text-white">INDIA TOUR OF ENGLAND TEST SERIES 2025</h1>
+                        <b class="text-[#b0c8e1]">6 DAYS TO GO</b>
+                    </div>
+                    <hr class="text-[#9a9a9a]">
+                    <div class="flex justify-between items-center px-2 text-white font-semibold h-[90px] text-sm">
+                        <div class="flex items-center gap-3 w-[174px]">
+                            <img src="./img/endland.png" alt="" class="w-[60px] h-[60px]">
+                            ENGLAND
+                        </div>
+                        <img src="./img/vs.png" alt="" class="w-6 h-9">
+                        <div class="flex items-center gap-3 w-[174px]">
+                            <img src="./img/logo.webp" alt="" class="w-[60px] h-[60px]">
+                            INDIA
+                        </div>
+                    </div>
+                    <div class="text-white text-[15px] h-[41px] flex items-center justify-center">20 Jun  - 24 Jun 2025 | 15:30 IST </div>
+                    <div class="px-4 h-[67px] bg-[#9F9F9F33] flex justify-between text-white items-center text-[15px]">
+                        <p>Headingley<span>, Leeds</span></p>
+                        <b>Match Info →</b>
+                    </div>
+                </div>
+            </div>                         
+            <div class="w-[617px] h-[265px] bg-[#262d41] rounded-r-xl flex relative">
+                <div class="w-6 bg-[#0f235a] text-white">
+                    <h1 class="absolute -rotate-90 top-[11%] left-[-2.3%]">1st T20I</h1>
+                </div>
+                <div>
+                    <div class="w-[592px] h-[66px] flex items-center justify-between px-4 text-[15px]">
+                        <h1 class="text-white">INDIA WOMEN IN ENGLAND T20 SERIES 2025</h1>
+                        <b class="text-[#b0c8e1]">2 WEEKS TO GO</b>
+                    </div>
+                    <hr class="text-[#9a9a9a]">
+                    <div class="flex justify-between items-center px-2 text-white font-semibold h-[90px] text-sm">
+                        <div class="flex items-center gap-3 w-[174px]">
+                            <img src="./img/endland.png" alt="" class="w-[60px] h-[60px]">
+                            ENGLAND <br> (WOMEN)
+                        </div>
+                        <img src="./img/vs.png" alt="" class="w-6 h-9">
+                        <div class="flex items-center gap-3 w-[174px]">
+                            <img src="./img/logo.webp" alt="" class="w-[60px] h-[60px]">
+                            INDIA (WOMEN)
+                        </div>
+                    </div>
+                    <div class="text-white text-[15px] h-[41px] flex items-center justify-center">Sat,28 Jun 2025 | 19:00 IST </div>
+                    <div class="px-4 h-[67px] bg-[#9F9F9F33] flex justify-between text-white items-center text-[15px]">
+                        <p>Trent Bridge<span>, Nottingham</span></p>
+                        <b>Match Info →</b>
+                    </div>
+                </div>
+            </div>                         
+            <div class="w-[617px] h-[265px] bg-[#262d41] rounded-r-xl flex relative">
+                <div class="w-6 bg-[#0f235a] text-white">
+                    <h1 class="absolute -rotate-90 top-[11%] left-[-2.8%]">2nd T20I</h1>
+                </div>
+                <div>
+                    <div class="w-[592px] h-[66px] flex items-center justify-between px-4 text-[15px]">
+                        <h1 class="text-white">INDIA WOMEN IN ENGLAND T20 SERIES 2025</h1>
+                        <b class="text-[#b0c8e1]">2 WEEKS TO GO</b>
+                    </div>
+                    <hr class="text-[#9a9a9a]">
+                    <div class="flex justify-between items-center px-2 text-white font-semibold h-[90px] text-sm">
+                        <div class="flex items-center gap-3 w-[174px]">
+                            <img src="./img/endland.png" alt="" class="w-[60px] h-[60px]">
+                            ENGLAND <br> (WOMEN)
+                        </div>
+                        <img src="./img/vs.png" alt="" class="w-6 h-9">
+                        <div class="flex items-center gap-3 w-[174px]">
+                            <img src="./img/logo.webp" alt="" class="w-[60px] h-[60px]">
+                            INDIA (WOMEN)
+                        </div>
+                    </div>
+                    <div class="text-white text-[15px] h-[41px] flex items-center justify-center">Tue,1 Jul 2025 | 23:00 IST</div>
+                    <div class="px-4 h-[67px] bg-[#9F9F9F33] flex justify-between text-white items-center text-[15px]">
+                        <p>Seat Unique Stadium<span>, Bristol</span></p>
+                        <b>Match Info →</b>
+                    </div>
+                </div>
+            </div>                         
+        </div>
+        <!--match card-->
+    </div>
+    <!--matches-->
+
+    <!-- video -->
+    <div class="h-100 ml-[15px] py-5 rounded-t-3xl bg-[#272c40] max-sm:w-317 max-md:w-313 max-lg:w-313">
+        <div class="flex justify-between items-center mx-8 py-10">
+            <div class="flex items-center">
+                <h1 class="text-3xl font-semibold text-white">Videos</h1>
+                <div class="max-sm:hidden">
+                    <ul class="flex gap-12 ml-30 text-[#bfc0c6] text-[15px] font-bold">
+                        <li class="text-white"><a href="">Latest</a></li>
+                        <li><a href="">Highlights</a></li>
+                        <li><a href="">Features & Interviews</a></li>
+                        <li><a href="">Press Conferences</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center gap-7">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"><path fill="none" stroke="#7f7f7f" stroke-linecap="square" d="M10 14L3 7.5L10 1" stroke-width="1.5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"><path fill="none" stroke="#fff" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1.5"/></svg>
+                <div class="flex items-center gap-2 font-semibold text-[#7f7f7f] text-xs">SEE ALL
+                    <div class="w-6 h-6 rounded-full border-1 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="#7f7f7f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg></div>
+                </div>
+            </div>
+        </div>
+        <!--video card-->
+       <div class="card overflow-x-scroll">
+         <div class="flex gap-5 pl-4 w-450">
+            <div class="w-[340px] h-[375px] rounded-2xl bg-[#133f7e]" data-aos="fade-up">
+                <img src="./img/Shubhman_test.jpg" alt="" class="w-100 rounded-2xl">
+                <div class="flex flex-col gap-2 px-4 mt-3">
+                    <p class="text-[#ffffff99] text-[15px]">14th Jun, 2025</p>
+                    <p class="text-[#ffffffcc] text-[19px] font-bold">Intra-squad Match: Day 1 Wrap in Beckenham ft. Prasidh Krishna</p>
+                    <hr class="border-[#2b538b]">
+                    <div class="flex justify-between gap-3">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#d0d9e5" d="M41.56 26.13a1.25 1.25 0 0 0 1.57.81c.65-.21 1.02-.91.81-1.57l-.001-.003C43.85 25.1 38.841 10 23.999 10C9.16 10 4.15 25.1 4.062 25.368l-.001.002c-.21.66.15 1.36.81 1.57s1.36-.15 1.57-.81C6.62 25.57 10.95 12.5 24 12.5s17.38 13.07 17.56 13.63M17.5 27a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0m6.5-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18"/></svg>
+                            <h1 class="text-[#ffffffcc] text-[14px]">17.6K</h1>
+                            <h2 class="text-[#ffffffcc] text-[14px]">01:43 mins</h2></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#d0d9e5" fill-rule="evenodd" d="M16.5 2.25a3.25 3.25 0 0 0-3.2 3.824L8.57 9.386l-.068.053a3.25 3.25 0 1 0 0 5.121l.068.054l4.73 3.312q-.05.28-.05.574a3.25 3.25 0 1 0 .667-1.973L9.438 13.39c.2-.422.312-.893.312-1.391s-.112-.97-.312-1.391l4.48-3.136A3.25 3.25 0 1 0 16.5 2.25M14.75 5.5a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0M6.5 10.25a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m10 6.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5" clip-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[340px] h-[375px] rounded-2xl bg-[#133f7e]" data-aos="fade-up">
+                <img src="./img/SuriyaKumar_T20.jpg" alt="" class="w-100 rounded-2xl">
+                <div class="flex flex-col gap-2 px-4 mt-3">
+                    <p class="text-[#ffffff99] text-[15px]">13th Jun, 2025</p>
+                    <p class="text-[#ffffffcc] text-[19px] font-bold">Morne Morkel previews the intra-squad match in Beckenhan</p>
+                    <hr class="border-[#2b538b]">
+                    <div class="flex justify-between gap-3">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#d0d9e5" d="M41.56 26.13a1.25 1.25 0 0 0 1.57.81c.65-.21 1.02-.91.81-1.57l-.001-.003C43.85 25.1 38.841 10 23.999 10C9.16 10 4.15 25.1 4.062 25.368l-.001.002c-.21.66.15 1.36.81 1.57s1.36-.15 1.57-.81C6.62 25.57 10.95 12.5 24 12.5s17.38 13.07 17.56 13.63M17.5 27a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0m6.5-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18"/></svg>
+                            <h1 class="text-[#ffffffcc] text-[14px]">31.3K</h1>
+                            <h2 class="text-[#ffffffcc] text-[14px]">02:03 mins</h2></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#d0d9e5" fill-rule="evenodd" d="M16.5 2.25a3.25 3.25 0 0 0-3.2 3.824L8.57 9.386l-.068.053a3.25 3.25 0 1 0 0 5.121l.068.054l4.73 3.312q-.05.28-.05.574a3.25 3.25 0 1 0 .667-1.973L9.438 13.39c.2-.422.312-.893.312-1.391s-.112-.97-.312-1.391l4.48-3.136A3.25 3.25 0 1 0 16.5 2.25M14.75 5.5a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0M6.5 10.25a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m10 6.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5" clip-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[340px] h-[375px] rounded-2xl bg-[#133f7e]" data-aos="fade-up">
+                <img src="./img/ViratKohli.jpg" alt="" class="w-100 rounded-2xl">
+                <div class="flex flex-col gap-2 px-4 mt-3">
+                    <p class="text-[#ffffff99] text-[15px]">12th Jun, 2025</p>
+                    <p class="text-[#ffffffcc] text-[19px] font-bold">Hudddle Talk ft. Head Coach Gautam Gambhir</p>
+                    <hr class="border-[#2b538b]">
+                    <div class="flex justify-between gap-3">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#d0d9e5" d="M41.56 26.13a1.25 1.25 0 0 0 1.57.81c.65-.21 1.02-.91.81-1.57l-.001-.003C43.85 25.1 38.841 10 23.999 10C9.16 10 4.15 25.1 4.062 25.368l-.001.002c-.21.66.15 1.36.81 1.57s1.36-.15 1.57-.81C6.62 25.57 10.95 12.5 24 12.5s17.38 13.07 17.56 13.63M17.5 27a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0m6.5-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18"/></svg>
+                            <h1 class="text-[#ffffffcc] text-[14px]">51.8K</h1>
+                            <h2 class="text-[#ffffffcc] text-[14px]">02:45 mins</h2></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#d0d9e5" fill-rule="evenodd" d="M16.5 2.25a3.25 3.25 0 0 0-3.2 3.824L8.57 9.386l-.068.053a3.25 3.25 0 1 0 0 5.121l.068.054l4.73 3.312q-.05.28-.05.574a3.25 3.25 0 1 0 .667-1.973L9.438 13.39c.2-.422.312-.893.312-1.391s-.112-.97-.312-1.391l4.48-3.136A3.25 3.25 0 1 0 16.5 2.25M14.75 5.5a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0M6.5 10.25a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m10 6.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5" clip-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[340px] h-[375px] rounded-2xl bg-[#133f7e]" data-aos="fade-up">
+                <img src="./img/Hardik_ODI.jpg" alt="" class="w-100 rounded-2xl">
+                <div class="flex flex-col gap-2 px-4 mt-3">
+                    <p class="text-[#ffffff99] text-[15px]">11th Jun, 2025</p>
+                    <p class="text-[#ffffffcc] text-[19px] font-bold">Working on different skill sets will be crucial in this series : Morne</p>
+                    <hr class="border-[#2b538b]">
+                    <div class="flex justify-between gap-3">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#d0d9e5" d="M41.56 26.13a1.25 1.25 0 0 0 1.57.81c.65-.21 1.02-.91.81-1.57l-.001-.003C43.85 25.1 38.841 10 23.999 10C9.16 10 4.15 25.1 4.062 25.368l-.001.002c-.21.66.15 1.36.81 1.57s1.36-.15 1.57-.81C6.62 25.57 10.95 12.5 24 12.5s17.38 13.07 17.56 13.63M17.5 27a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0m6.5-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18"/></svg>
+                            <h1 class="text-[#ffffffcc] text-[14px]">10.2K</h1>
+                            <h2 class="text-[#ffffffcc] text-[14px]">04:58 mins</h2></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#d0d9e5" fill-rule="evenodd" d="M16.5 2.25a3.25 3.25 0 0 0-3.2 3.824L8.57 9.386l-.068.053a3.25 3.25 0 1 0 0 5.121l.068.054l4.73 3.312q-.05.28-.05.574a3.25 3.25 0 1 0 .667-1.973L9.438 13.39c.2-.422.312-.893.312-1.391s-.112-.97-.312-1.391l4.48-3.136A3.25 3.25 0 1 0 16.5 2.25M14.75 5.5a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0M6.5 10.25a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m10 6.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5" clip-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[340px] h-[375px] rounded-2xl bg-[#133f7e]" data-aos="fade-up">
+                <img src="./img/Dhoni_ODI.jpg" alt="" class="w-100 rounded-2xl">
+                <div class="flex flex-col gap-2 px-4 mt-3">
+                    <p class="text-[#ffffff99] text-[15px]">10th Jun, 2025</p>
+                    <p class="text-[#ffffffcc] text-[19px] font-bold">Kent Diaries all ft. Arshdeep Singh</p>
+                    <hr class="border-[#2b538b]">
+                    <div class="flex justify-between gap-3">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#d0d9e5" d="M41.56 26.13a1.25 1.25 0 0 0 1.57.81c.65-.21 1.02-.91.81-1.57l-.001-.003C43.85 25.1 38.841 10 23.999 10C9.16 10 4.15 25.1 4.062 25.368l-.001.002c-.21.66.15 1.36.81 1.57s1.36-.15 1.57-.81C6.62 25.57 10.95 12.5 24 12.5s17.38 13.07 17.56 13.63M17.5 27a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0m6.5-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18"/></svg>
+                            <h1 class="text-[#ffffffcc] text-[14px]">54.1K</h1>
+                            <h2 class="text-[#ffffffcc] text-[14px]">02:34 mins</h2></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#d0d9e5" fill-rule="evenodd" d="M16.5 2.25a3.25 3.25 0 0 0-3.2 3.824L8.57 9.386l-.068.053a3.25 3.25 0 1 0 0 5.121l.068.054l4.73 3.312q-.05.28-.05.574a3.25 3.25 0 1 0 .667-1.973L9.438 13.39c.2-.422.312-.893.312-1.391s-.112-.97-.312-1.391l4.48-3.136A3.25 3.25 0 1 0 16.5 2.25M14.75 5.5a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0M6.5 10.25a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m10 6.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5" clip-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+       </div>
+        <!--video card-->
+    </div>
+    <!-- video -->
+
+    <!-- latest news -->
+    <div class="pt-40 max-sm:w-317 max-md:w-318 max-lg:w-318">
+        <div class="flex justify-between items-center px-5">
+            <h1 class="text-4xl font-bold">Latest News</h1>
+            <div class="flex gap-3">
+                <h1 class="text-[#7f7f7f] text-[14px]">SEE ALL</h1>
+                <div class="flex justify-center items-center w-6 h-6 border-1 border-[#7f7f7f] rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#7f7f7f" d="M13.293 7.293a1 1 0 0 0 0 1.414L15.586 11H8a1 1 0 0 0 0 2h7.586l-2.293 2.293a.999.999 0 1 0 1.414 1.414L19.414 12l-4.707-4.707a1 1 0 0 0-1.414 0"/></svg>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-5 px-5 max-sm:flex-col">
+            <div class="latest flex items-end w-[935px] h-[500px] mt-5 max-sm:w-[1245px]">
+                <div class="flex flex-col gap-1 ml-5 mb-5">
+                    <div class="text-center news w-16 text-white font-semibold text-[16px] bg-[#c65142]">
+                        <i>News</i>
+                    </div>
+                    <h1 class="text-[22px] text-white font-semibold">Top honour:MS Dhoni Inducted into ICC Hall of Fame</h1>
+                    <p class="text-[14px] text-white">09th june , 2025</p>
+                </div>
+            </div>
+            <div class="card flex flex-col h-[520px] gap-3 pt-5 overflow-y-scroll max-sm:px-70">
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-4.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">09th June, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">BCCI announces updated venues for Team India <br> (Int'l home season) & South Africa A Tour of..</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-1.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">04th June, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">Board of Control for Cricket in India (BCCI)<br> invites proposals for provision of relating IP..</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-2.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">04th June, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">Board of Control for Cricket in India (BCCI) <br> invites proposals for provision of relating BC..</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-3.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">24th June, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">India's squad (Senior Men's) for England Test<br>series announced</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-5.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">22nd May, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">India U19 squad for Tour of England announced</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-2.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">16th May, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">India A's squad for tour of England announced</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+                <div class="flex gap-3 relative">
+                    <img src="./img/news-6.avif" alt="" class="w-[160px] h-[100px] rounded-xl">
+                    <div>
+                        <p class="text-[#7a7a7a] text-[14px] font-semibold">12th May, 2025</p>
+                        <p class="text-[18px] text-black font-semibold">Reminder of IPL 2025 to be held at six venues</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"><g fill="none" stroke="#7f7f7f" stroke-width="1.5"><path d="M9 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/><path stroke-linecap="round" d="M14 6.5L9 10m5 7.5L9 14"/><path d="M19 18.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Zm0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- latest news -->
+
+    <!--game-->
+    <div  class="pt-20 pb-10 max-sm:w-322 max-md:w-318 max-lg:w-318">
+        <div class="flex items-center justify-end">
+            <div class="flex items-center gap-2 font-semibold text-[#7f7f7f] text-xs px-10">SEE ALL
+                <div class="w-6 h-6 rounded-full border-1 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="#7f7f7f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg></div>
+            </div>
+        </div>
+        <div class="flex items-center justify-between pt-5 max-sm:flex-col max-sm:text-center">
+            <div class="w-[390px] flex flex-col items-center max-sm:w-[700px]">
+                <h2 class="text-[34px] font-bold max-sm:text-[50px] max-lg:ml-9">The Game in <br> Number</h2>
+                <p class="text-[15px] text-[#9a9c9e] ml-10 max-sm:text-[20px] max-lg:ml-0">A look at the Current cricket rankings</p>
+            </div>
+            <div class="card w-[1172px] h-[300px] flex overflow-x-scroll rounded-l-xl gap-[1px] max-sm:my-5 max-sm:ml-20">
+                <img src="./img/g-1.jpg" alt="" class="w-[320px] h-[300px]">
+                <img src="./img/g-2.jpg" alt="" class="w-[320px] h-[300px]">
+                <img src="./img/g-4.jpg" alt="" class="w-[320px] h-[300px]">
+                <img src="./img/g-3.jpg" alt="" class="w-[320px] h-[300px]">
+                <img src="./img/g-2.jpg" alt="" class="w-[320px] h-[300px]">
+                <img src="./img/g-4.jpg" alt="" class="w-[320px] h-[300px]">
+                <img src="./img/g-3.jpg" alt="" class="w-[320px] h-[300px]">
+            </div> 
+        </div>    
+    </div>
+    <!--game-->
+
+    <!-- Bcci App -->
+    <div class="flex justify-around items-center mt-10 max-sm:w-322 max-md:w-318 max-lg:w-318 max-xl:px-5">
+        <div class="flex flex-col gap-5">
+            <h1 class="text-black text-[40px] font-bold">Get the Official BCCI App</h1>
+            <p class="text-[20px] text-[#000000cc] font-[200] leading-8">Get the latest scores on the go. Find the latest content, including match <br> highlights, press conferences and recap all at your fingertips by downloading <br> the official BCCI app.</p>
+            <div class="flex gap-1">
+                 <img src="./img/google play.svg" alt="" class="w-30">
+                 <img src="./img/app store.svg" alt="" class="w-30">   
+            </div>
+        </div>
+            <img src="./img/official-mob.avif" alt="" class="w-[380px] h-[410px] mr-30 max-xl:mr-5">
+    </div>
+    <!-- Bcci App -->
+
+    <!--honours-->
+    <div class="bg-[#28303b] w-full h-[365px] pl-[15px] pt-[60px] mt-10 max-sm:w-322 max-md:w-318 max-lg:w-318">
+        <h1 class="text-[36px] text-white font-bold pb-[25px]">Honour</h1>
+        <div class="card flex gap-5 overflow-x-scroll">
+            <img src="./img/t-1.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-2.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-3.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-4.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-1.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-2.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-3.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+            <img src="./img/t-4.jpg" alt="" class="rounded-xl border-1 border-[#328ed9] w-[352px] h-[290px]" data-aos="zoom-in">
+        </div>
+    </div>
+    <!--honours-->
+
+    <!-- captain corner -->
+    <div class="bg-[#1c2336] px-5 py-6 mt-30 max-sm:w-322 max-md:w-318 max-lg:w-318">
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-[30px] text-white font-semibold max-sm:text-[40px]">Captain's Corner</h1>
+                <p class="text-[13px] text-white max-sm:text-lg">Shaping Legends, Writing Indian Cricket History</p>
+            </div>
+            <div class="flex items-center gap-6 px-[2px] py-[2px] rounded-full bg-white text-[#00000099]">
+                <h2 class="px-3 py-1 text-white bg-[#c65142] rounded-full">Test</h2>
+                <h2>ODI</h2>
+                <h2 class="mr-4">T20l</h2>
+            </div>
+        </div>
+        <div class="flex items-end gap-8 mt-9">
+            <div class="hover:scale-105 duration-200">
+                <span class="text-[#ffffff99] text-[14px]">2022-22</span>
+                <img src="./img/KLRahul_Test_compress.avif" alt="" class="w-[330px] mt-2">
+                <div class="flex justify-between text-white text-[14px] px-2 mt-1">
+                    <p>KL Rahul</p>
+                    <h6>1 Yrs</h6>
+                </div>
+            </div>
+            <div class="hover:scale-105 duration-200">
+                <span class="text-[#ffffff99] text-[14px]">2022-25</span>
+                <img src="./img/Rohit_Test_compress.avif" alt="" class="w-[270px] mt-2">
+                <div class="flex justify-between text-white text-[14px] px-2 mt-1">
+                    <p>Rohit Sharma</p>
+                    <h6>3 Yrs</h6>
+                </div>
+            </div>
+            <div class="hover:scale-105 duration-200">
+                <span class="text-[#ffffff99] text-[14px]">2022-22</span>
+                <img src="./img/Shubhman_test.avif" alt="" class="w-[270px] mt-2">
+                <div class="flex justify-between text-white text-[14px] px-2 mt-1">
+                    <p>Shubham Gill</p>
+                    <h6>1 Yrs</h6>
+                </div>
+            </div>
+            <div class="hover:scale-105 duration-200">
+                <span class="text-[#ffffff99] text-[14px]">2022-22</span>
+                <img src="./img/Jasprit_Test.avif" alt="" class="w-[270px] mt-2">
+                <div class="flex justify-between text-white text-[14px] px-2 mt-1">
+                    <p>Jasprit Bhumrah</p>
+                    <h6>1 Yrs</h6>
+                </div>
+            </div>
+            <div class="max-sm:hidden max-md:hidden hover:scale-105 duration-200">
+                <span class="text-[#ffffff99] text-[14px]">2014-22</span>
+                <img src="./img/Virat_Test_compress.avif" alt="" class="w-[270px] mt-2">
+                <div class="flex justify-between text-white text-[14px] px-2 mt-1">
+                    <p>Virat Kohli</p>
+                    <h6>8 Yrs</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- captain corner -->
+
+    <!-- shop -->
+    <div class="flex gap-20 mt-10 max-sm:w-322 max-sm:gap-0 max-md:w-318 max-md:gap-0 max-lg:w-318 max-lg:gap-0 max-xl:gap-0">
+        <img src="./img/shop-img.avif" alt="" class="max-xl:w-150">
+        <div class="mt-9">
+            <img src="./img/shop-left-img.png" alt="">
+            <p class="text-[20px] text-[#2b3f6c] ml-30 mt-7">Show your true colors and support Indian cricket <br> team with our vibrant merchandise</p>
+            <button class="px-8 py-2 bg-[#f25549] rounded-xl cursor-pointer ml-30 mt-13 max-sm:mt-5">Buy now</button>
+        </div>
+    </div>
+    <!-- shop -->
+
+    <!-- gallery -->
+    <div class="w-[99%] bg-[#262d41] ml-[1%] mt-20 py-10 rounded-tl-3xl max-sm:w-321 max-md:w-316 max-lg:w-316">
+        <div class="flex justify-between items-center mx-8 py-5">
+            <div class="flex items-center">
+                <h1 class="text-3xl font-semibold text-white">Galleries</h1>
+            </div>
+            <div class="flex items-center gap-7">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"><path fill="none" stroke="#7f7f7f" stroke-linecap="square" d="M10 14L3 7.5L10 1" stroke-width="1.5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"><path fill="none" stroke="#fff" stroke-linecap="square" d="m5 14l7-6.5L5 1" stroke-width="1.5"/></svg>
+                <div class="flex items-center gap-2 font-semibold text-[#7f7f7f] text-xs">SEE ALL
+                    <div class="w-6 h-6 rounded-full border-1 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="#7f7f7f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg></div>
+                </div>
+            </div>
+        </div>  
+        <!-- galleru card -->
+         <div class="gallery overflow-x-scroll">
+            <div class="flex gap-3 ml-4">
+                <img src="./img/Gallery-black-1.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-2.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-3.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-4.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-5.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-6.jpg" alt="" class="w-[500px] rounded-xl">
+            </div>
+            <div class="flex gap-3 ml-4 mt-3">
+                <img src="./img/Gallery-6.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-5.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-4.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-3.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-2.jpg" alt="" class="w-[500px] rounded-xl">
+                <img src="./img/Gallery-black-1.jpg" alt="" class="w-[500px] rounded-xl">
+            </div>
+         </div>
+        <!-- galleru card -->
+    </div>
+    <!-- gallery -->
+
+    <!-- logo -->
+    <div class="bg-[#000] px-1 py-1 mt-10 max-sm:w-321.5 max-md:w-318 max-lg:w-318">
+        <div class="flex items-center justify-between border-2 border-[#d2a66c] px-10 rounded-3xl">
+            <div class="flex flex-col items-center gap-5 py-7">
+                <img src="./img/title-sponsor.svg" alt="" class="w-23">
+                <img src="./img/spsr-idfc-first.png" alt="" class="w-[120px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 py-7">
+                <img src="./img/lead-sponsor.svg" alt="" class="w-23">
+                <img src="./img/spsr-dream11.png" alt="" class="w-[130px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 py-7">
+                <img src="./img/kit-sponsor.svg" alt="" class="w-23">
+                <img src="./img/spsr-addidas.png" alt="" class="w-[70px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 pt-7">
+                <img src="./img/SBI.png" alt="" class="w-[130px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 py-7">
+                <img src="./img/official-partner.svg" alt="" class="w-23">
+                <img src="./img/campa-white-bg.png" alt="" class="w-[80px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 pt-7">
+                <img src="./img/atomberg.png" alt="" class="w-[100px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 py-7">
+                <img src="./img/official-broadcaster.svg" alt="" class="w-22">
+                <img src="./img/spsr-star-sports.png" alt="" class="w-[80px]">
+            </div>
+            <div class="flex flex-col items-center gap-5 py-7">
+                <img src="./img/official-digital-steaming.svg" alt="" class="w-23">
+                <img src="./img/JioHotstar.webp" alt="" class="w-[80px]">
+            </div>
+        </div>
+    </div>
+    <!-- logo -->
+
+    <!-- footer -->
+    <footer class="bg-[#0a182e] px-3 py-10 max-sm:w-321.5 max-sm:px-10 max-md:w-318 max-md:px-10 max-lg:w-318 max-lg:px-10 max-xl:px-10">
+        <div class="flex justify-between">
+            <img src="./img/logo.webp" alt="" class="w-20">
+            <div class="flex items-center gap-2 mr-25 max-sm:gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#fff" d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z" stroke-width="0.5" stroke="#fff"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm-4 5a4 4 0 1 0 0 8a4 4 0 0 0 0-8m0 2a2 2 0 1 1 0 4a2 2 0 0 1 0-4m4.5-3.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2" stroke-width="0.5" stroke="#fff"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" stroke-width="0.5" stroke="#fff"/></svg>
+            </div>
+        </div>
+        <div class="flex justify-around gap-10 mt-8 max-sm:flex-wrap max-sm:gap-35 max-md:flex-wrap max-md:gap-35 max-lg:flex-wrap max-lg:gap-35 max-xl:flex-wrap max-xl:gap-20">
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94] max-sm:text-xl max-md:text-xl max-lg:text-lg">
+                <li class="text-[20px] text-white">Contact Us</li>
+                <li class="mt-2">4th Floor, Cricket Centre</li>
+                <li>Wankhede Stadium ‘D’ Road,</li>
+                <li>Churchgate Mumbai - 400020, India.</li>
+                <li class="mt-5"><a href="">Email: office@bcci.tv</a></li>
+                <li><a href="">T:+91 22 67598800</a></li>
+                <li><a href="">T:+91 22 61580300</a></li>
+            </ul>
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">Matches</li>
+                <li class="mt-2"><a href="">Domestic</a></li>
+                <li><a href="">International</a></li>
+            </ul>   
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">Videos</li>
+                <li class="mt-2"><a href="">Latest</a></li>
+                <li><a href="">Highlights</a></li>
+                <li><a href="">Features and Interviews</a></li>
+                <li><a href="">Press Conferences</a></li>
+            </ul>   
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">News</li>
+                <li class="mt-2"><a href="">Latest</a></li>
+                <li><a href="">Press Releases</a></li>
+                <li><a href="">Features and Interviews</a></li>
+                <li><a href="">BCCI News</a></li>
+            </ul>   
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">More</li>
+                <li class="mt-2"><a href="">IPL</a></li>
+                <li><a href="">WPL</a></li>
+                <li><a href="">Venues</a></li>
+                <li><a href="">Galleries</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Tender</a></li>
+                <li><a href="">Playing Conditions</a></li>
+            </ul>   
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">About</li>
+                <li class="mt-2"><a href="">History</a></li>
+                <li><a href="">Anti Corruption</a></li>
+                <li><a href="">Anti Racism</a></li>
+                <li><a href="">Anti Doping</a></li>
+                <li><a href="">TUE Application Form</a></li>
+                <li><a href="">Annual Reports</a></li>
+                <li><a href="">MCC Laws of Cricket</a></li>
+            </ul>
+            <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">Players</li>
+                <li class="mt-2"><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+            </ul>
+             <ul class="flex flex-col gap-1.5 text-[15px] text-[#ffffff94]">
+                <li class="text-[20px] text-white">BCCI</li>
+                <li class="mt-2"><a href="">Copyrights</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy and Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <!--copy-->
+    <div class="flex justify-between bg-[#0d1c34] text-[12px] text-white px-25 py-8 max-sm:w-321.5 max-sm:text-lg max-md:w-318 max-md:text-lg max-lg:w-318 max-lg:text-base">
+        <p>Terms & Conditions | Privacy Policy</p>
+        <p>Copyrights BCCI 2025, All Rights Reserved.</p>
+    </div>
+    <!--copy-->
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
