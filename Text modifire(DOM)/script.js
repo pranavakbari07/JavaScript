@@ -1,23 +1,3 @@
-//  let heading = document.getElementById("heading")
-//  let hide = document.getElementById("btn-hide")
-//  let show = document.getElementById("btn-show")
-
-// //  function hidefunc(){
-// //     heading.style.visibility="hidden"
-// //  }
-
-// //   function showfunc(){
-// //     heading.style.visibility="visible"
-// //  }
-
-//  function hidefunc(){
-//     heading.style.display="none"
-//  }
-
-//   function showfunc(){
-//     heading.style.display="block"
-//  }
-
 const input = document.getElementById("inp");
 const heading = document.getElementById("heading");
 
@@ -35,7 +15,7 @@ function makeitalic() {
 }
 function changecolor() {
   heading.style.fontWeight = "400";
-  heading.style.color = "red";
+  heading.style.color = "coral";
 }
 function changefontstyle() {
   heading.style.fontWeight = "900";
@@ -66,20 +46,6 @@ function rotateText() {
   document.getElementById("heading").style.transform = "rotate(360deg)";
   document.getElementById("heading").style.transition = "transform 1s";
 }
-// function speakText() {
-//   let el = document.getElementById("heading");
-//   const msg = new SpeechSynthesisUtterance(el.textContent);
-//   window.speechSynthesis.speak(msg);
-// }
-// function randomStyle() {
-//   let el = document.getElementById("heading");
-//   const colors = ["red", "blue", "green", "purple", "orange", "pink"];
-//   const fonts = ["Arial", "Georgia", "Courier New", "Clicker Script"];
-//   el.style.color = colors[Math.floor(Math.random() * colors.length)];
-//   el.style.fontSize = `${Math.floor(Math.random() * 20) + 16}px`;
-//   el.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
-//   el.style.textShadow = "2px 2px 4px rgba(0,0,0,0.2)";
-// }
 function skewText() {
   heading.style.transition = "transform 0.3s ease";
   heading.style.transform = "skewX(20deg)" ;

@@ -21,6 +21,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: darken;
         }
 
         @keyframes bounce {
@@ -38,14 +40,14 @@
 
     <div class="img h-screen flex items-center justify-center">
         <div
-            class="bg-gradient-to-br from-[#bde0fe] via-[#a2d2ff] to-[#cdb4db] py-10 px-5 rounded-lg shadow-lg w-full max-w-2xl">
+            class="backdrop-blur-sm bg-white/30 border border-white/40 shadow-2xl py-10 px-5 rounded-lg shadow-lg w-full max-w-2xl">
             <h1 class="text-3xl font-bold text-center text-indigo-600 mb-6">📝Text Modifier Form</h1>
 
             <!-- Input and button -->
             <div class="flex justify-center items-center gap-4 mb-6">
-                <input type="text" name="text"
+                <input type="text"
                     class="bg-zinc-200 text-zinc-600 font-mono ring-1 ring-zinc-400 focus:ring-2 focus:ring-rose-400 outline-none duration-300 placeholder:text-zinc-600 placeholder:opacity-50 rounded-full px-4 py-1 shadow-md focus:shadow-lg focus:shadow-rose-400"
-                    autocomplete="off" placeholder="Enter your name" id="inp">
+                    placeholder="Enter your name" id="inp">
                 <!-- input -->
 
                 <!-- value show button -->
@@ -64,7 +66,7 @@
                     <span
                         class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"></span>
                     <span
-                        class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Get
+                        class="relative w-fu   ll text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Get
                         Value</span>
                 </button>
             </div>
@@ -75,7 +77,7 @@
             <div class="flex flex-wrap justify-center gap-3">
                 <!-- change button -->
                 <button onclick="makeBold()"
-                    class="relative py-2 px-5 text-black text-base border-1 font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                    class="cursor-pointer relative py-2 px-5 text-black text-base border-1 font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
                     🅱️ Make a bold
                 </button>
                 <button onclick="makeitalic()"
@@ -118,7 +120,7 @@
                     Overline
                 </button>
                 <button onclick="rotateText()"
-                    class="cursor-pointer relative py-2 px-5 text-black text-base border-1 font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">🔄 
+                    class="cursor-pointer relative py-2 px-5 text-black text-base border-1 font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">🔄
                     Rotate text
                 </button>
                 <button onclick="skewText()"
