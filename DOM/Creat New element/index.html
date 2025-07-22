@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magical Name Adder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: 
+        linear-gradient(to bottom right, rgba(40, 0, 70, 0.85), rgba(0, 0, 30, 0.85)),
+        url('https://images.unsplash.com/photo-1517816428104-797678c7cf6c?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #1e003c; /* fallback */
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 40px 35px;
+      width: 100%;
+      max-width: 460px;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      text-align: center;
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    .card h2 {
+      font-size: 26px;
+      color: #fff;
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px #f5baff;
+    }
+
+    #name {
+      width: 100%;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    #name::placeholder {
+      color: #ccc;
+    }
+
+    #name:focus {
+      box-shadow: 0 0 12px #ff89ff;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    #btn {
+      padding: 12px 28px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #da8cff, #9c6aff);
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 15px #d986ff;
+    }
+
+    #box {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    #box h1 {
+      font-size: 1.6rem;
+      background: linear-gradient(to right, #ffeb3b, #ff4081);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+  <div class="card">
+    <h2>✨ Your Name, Your Style</h2>
+    <input type="text" id="name" placeholder="Enter your name..." />
+    <button id="btn">Add Name</button>
+    <div id="box"></div>
+  </div>
+
+  <script>
+    let name = document.getElementById("name");
+    let box = document.getElementById("box");
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener("click", () => {
+      let heading = document.createElement("h1");
+      let select = document.createElement("select")
+      let option = document.createElement("option")
+      let option1 = document.createElement("option")
+      let option2 = document.createElement("option")
+      let option3 = document.createElement("option")
+      heading.innerText = name.value;
+      option.innerText = "Select Subject"
+      option1.innerText = "maths"
+      option2.innerText = "Hindi"
+      option3.innerText = "English"
+
+      box.appendChild(heading);
+      box.appendChild(select)
+      select.appendChild(option)
+      select.appendChild(option1)
+      select.appendChild(option2)
+      select.appendChild(option3)
+      name.value = "";
+      name1.value = "";
+    });
+  </script>
+</body>
+
+</html>
+
+
+
