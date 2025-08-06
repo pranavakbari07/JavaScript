@@ -163,7 +163,6 @@ function addToCart(name, price, image) {
     cart.push({ id: Date.now(), name, price, image, quantity: 1 });
   }
   localStorage.setItem("cart", JSON.stringify(cart));
-  showNotification("Added to cart!");
   updateCartCounter();
 }
 
@@ -263,7 +262,6 @@ function updateCartCounter() {
   }
 }
 
-// Initialize
 document.addEventListener("DOMContentLoaded", function () {
   updateCartDisplay();
   updateCartCounter();
