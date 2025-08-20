@@ -10,7 +10,13 @@ div {
     margin-top: 60px;
     margin-bottom: 20px;
 }
-
+.container{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
 input{
     padding: 10px 16px;
     border: 1px solid #aaa;
