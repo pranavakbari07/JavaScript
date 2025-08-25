@@ -1,0 +1,138 @@
+@media (max-width:576px) {
+    #nav .i{
+        display: flex;
+        font-size: 30px;
+    }
+    #nav{
+        width: 100%;
+        height: 60px;
+    }
+    .logo{
+        display: none;
+    }
+    section{
+        padding: 70px 0 0;
+    }
+    .search{
+        display: none;
+    }
+    .hero-1{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .hero-2 img{
+        width: 96%;
+    }
+    .login{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .right{
+        padding: 0; 
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+    .main img{
+        width: 20%;
+    }
+    .line{
+        flex-wrap: wrap;
+    }
+    .line .box{
+        width: 30%;
+    }
+    #footer{
+        display: none;
+    }
+    .mins{
+        width: 35%;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        color: rgb(102,102,102);
+        margin: 10px 0 0;
+    }
+    hr{
+        display: flex;
+    }
+}
+
+@media (min-width:577px) and (max-width:992px){
+    .logo{
+        display: none;
+    }
+    .hero-2{
+        display: none;
+    }
+    section{
+        padding: 90px 0 0;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+    .main img{
+        width: 20%;
+    }
+    .search{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    #nav .i{
+        display: flex;
+        font-size: 35px;
+    }
+    .line{
+        flex-wrap: wrap;
+    }
+    .line .box{
+        width: 30%;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+    .google{
+        width: 20px;
+        height: 20px;
+    }
+    #footer{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        color: rgb(102,102,102);
+        margin: 10px 0 0;
+    }
+    hr{
+        display: flex;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px){
+    .main{
+        flex-wrap: wrap;
+    }
+    section{
+        padding: 90px 0 0;
+    }
+    .right{
+        padding: 0;
+    }
+    .footer{
+        display: none;
+    }
+}

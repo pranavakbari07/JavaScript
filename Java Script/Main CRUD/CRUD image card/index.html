@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔥 Cool Image Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>🖼️ Cool Image Card Gallery</h1>
+
+  <div class="input">
+    <input type="text" id="imageUrl" placeholder="🌄 Enter Image URL" />
+    <input type="text" id="imageTitle" placeholder="✏️ Enter Image Title" />
+    <button id="add">➕ Add Image</button>
+  </div>
+
+  <div id="cards"></div>
+
+  <script>
+    let titleInput = document.getElementById("imageTitle");
+    let imageInput = document.getElementById("imageUrl");
+    let add = document.getElementById("add");
+    let cards = document.getElementById("cards");
+
+    add.addEventListener("click", () => {
+      let oldRecord = JSON.parse(localStorage.getItem("Imagecard")) || [];
+
+      if (!titleInput.value || !imageInput.value) {
+        alert("Please fill both fields!");
+        return;
+      }
+
+      let obj = {
+        id: Date.now(),
+        title: titleInput.value,
+        image: imageInput.value
+      };
+
+      oldRecord.push(obj);
+      localStorage.setItem("Imagecard", JSON.stringify(oldRecord));
+
+      titleInput.value = "";
+      imageInput.value = "";
+
+      getData();
+    });
+
+    function getData() {
+      let allData = JSON.parse(localStorage.getItem("Imagecard")) || [];
+      cards.innerHTML = "";
+
+      allData.forEach((item) => {
+        let div = document.createElement("div");
+        div.classList.add("box");
+
+        let img = document.createElement("img");
+        img.src = item.image;
+
+        let h2 = document.createElement("h2");
+        h2.innerText = item.title;
+
+        div.append(img, h2);
+        cards.append(div);
+      });
+    }
+
+    getData();
+  </script>
+</body>
+
+</html>

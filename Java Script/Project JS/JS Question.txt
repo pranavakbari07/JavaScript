@@ -1,0 +1,171 @@
+
+1.What is JavaScript?
+=> JavaScript is a single threaded programming language used to add interactivity in web pages.
+
+2.Who is JavaScript founder?
+=> Brendan Eich
+
+3.ES full form?
+=> ECMA Script
+
+4.ES6 Key Features :-
+=> 1.Let & Const
+   2.Arrow functions
+   3.Classes
+   4.Modules 
+   5.Template literals
+
+5.JavaScript written method :-
+=> JavaScript written method is two (02) :-
+   1.Internal
+   2.External
+
+6.What is a Console?
+=> Console is an object.
+=> The console object in JavaScript provides access to the browser's debugging console.
+
+7.Console Common Method :-
+=> 1.Console.log()
+   2.Console.warn()
+   3.console.error()
+
+8.JS in Inbuilt Function :-
+=> 1.alert (Output :- Undefined)
+   2.Prompt (Output :- Value) (Data type :- String)
+   3.Confirm (Output :- True/False) (Data type :- Boolean) 
+
+9.What is a Variable?
+=> A container to store some value.
+
+10.How many keyword used to create variables in JS?
+=> There are three (03) keywords :-
+   1.Var
+   2.Let
+   3.Const
+
+11.What is a Var?
+=> Var variable in Re-declaration and Re-initialization both are possible.
+
+12.What is a Let?
+=> Let variable in Re-declaration is not possible but Re-initialization is Possible.
+
+13.What is a Const?
+=> Const variable in Re-declaration and Re-initialization both are not possible.
+
+14.Nan full form :-
+=> Not a Number
+
+15.How many Data types in JS?
+=> JS in two (02) Types of data types :-
+   1. Primitive
+   2. Non-Primitive
+
+16.How many types in primitive?
+=> There are seven (07) types :-
+   1.String
+   2.Number
+   3.Boolaen
+   4.Null
+   5.Undefined
+   6.Symbol
+   7.Bigint
+
+17.How many types in non-primitive?
+=> Object/Array
+
+18.How to check data type?
+=> Check the data type we can use typeof() functions.
+
+19.How many types of Operators?
+=>There are four (04) types of Operators :-
+  1.Arithmetic (+,-,*,/)
+  2.Comparison (<,>,<=,>=,!,!=,==,===)
+  3.Logical (&&,||)
+  4.Assigment (+=,-=,=)
+
+20.What is a ==?
+=> == Compare the value.
+
+21.What is a ===?
+=> === Compare the data type and value both
+
+22.What is an Implicit?
+=> Implicit is automatically convert data type in JS.
+
+23.What is an Explicit?
+=> Explicit is Converting a value from data type to another.
+
+24.What is a null?
+=> Null is an explicit value representing.
+
+25.What is a undefined?
+=> Undefined is a property of the global object.
+=> That is, it is a variable in global scope.
+
+26. What is a Template literals?
+=> Template literals are a JS feature introduced in ES6 (ECMA Script in 2015).
+
+27.How many type conversion?
+=> There are two (02) type of conversion :-
+   1.Implicit
+   2.Explicit
+
+28.full form of NaN?
+=> NaN = Not a Number
+
+29.How many type of error in js?
+=> 1.Syntax Error
+   2.Runtime Error
+   3.Logical Error
+
+30.What is Truthy Value?
+=> A "truthy" value is a value that is considered true when encountered in a Boolean context. 
+
+31.What is falsy Value?
+=> a "falsy" value is a value that is considered false when encountered in a Boolean context.
+
+32.Falsy Number:-
+=> - False (The boolean literal false)
+   - 0 (Zero)
+   - -0 (Negative Zero)
+   - 0n (Bigint Zero)
+   - "" (Empty String)
+   - Null
+   - Undefined 
+   - NaN
+   - Document.all
+
+33.What is Nan?
+=> "NaN" is resulting from invalid mathematical operation.
+
+34.What is DOM?
+=> Dom is a programming interface that represent a web page as a hierarchical tree of object.
+
+35. What id BOM?
+=> Bom is a powerfull tool that empowers javascript to interact with the browser window, history navigation, and even the user's devices.
+
+36. Full Form of DOM and BOM?
+=> DOM = Document Object model (HTML Tree)
+   BOM = Browser Object Model (Windows Event)
+
+37.How many specific type of error in consol?
+=> 1.Referance Error
+   2.Type Error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
