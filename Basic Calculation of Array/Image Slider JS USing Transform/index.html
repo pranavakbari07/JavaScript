@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      #box {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      .slider-inner {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+        height: 100vh;
+        width: 100vw;
+      }
+      .slider-inner img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        border-radius: 0;
+        flex-shrink: 0;
+      }
+      .btn, .btn1 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.2);
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        padding: 10px;
+        border-radius: 50%;
+      }
+      .btn { left: 20px; }
+      .btn1 { right: 20px; }
+    </style>
+  </head>
+  <body class="main">
+    <div id="box">
+      <button class="btn" onclick="Left()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="45"
+          height="45"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill="#2f88ff"
+            fill-rule="evenodd"
+            d="M7.222 9.897q3.45-3.461 6.744-6.754a.65.65 0 0 0 0-.896c-.311-.346-.803-.316-1.027-.08Q9.525 5.59 5.796 9.322q-.296.243-.296.574t.296.592l7.483 7.306a.75.75 0 0 0 1.044-.029c.358-.359.22-.713.058-.881a3408 3408 0 0 1-7.16-6.988"
+            stroke-width="0.5"
+            stroke="#2f88ff"
+          />
+        </svg>
+      </button>
+      <div class="slider-inner" id="slider-inner">
+        <img src="img-1.jpg" alt="1">
+        <img src="img-2.jpg" alt="2">
+        <img src="img-3.jpg" alt="3">
+        <img src="img-4.jpg" alt="4">
+        <img src="img-5.jpg" alt="5">
+      </div>
+      <button class="btn1" onclick="Right()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="45"
+          height="45"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill="#2f88ff"
+            fill-rule="evenodd"
+            d="m7.053 2.158l7.243 7.256a.66.66 0 0 1 .204.483a.7.7 0 0 1-.204.497q-3.93 3.834-7.575 7.401c-.125.117-.625.408-1.011-.024c-.386-.433-.152-.81 0-.966l7.068-6.908l-6.747-6.759q-.369-.509.06-.939q.43-.43.962-.04"
+            stroke-width="0.5"
+            stroke="#2f88ff"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script>
+      let current = 0;
+      const total = 5; // total images
+      const sliderInner = document.getElementById('slider-inner');
+
+      function updateSlider() {
+        sliderInner.style.transform = `translateX(-${current * 100}%)`;
+      }
+
+      function Right() {
+        current++;
+        if (current >= total) current = 0;
+        updateSlider();
+      }
+      function Left() {
+        current--;
+        if (current < 0) current = total - 1;
+        updateSlider();
+      }
+    </script>
+  </body>
+</html>

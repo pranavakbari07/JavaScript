@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Counter</title>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .bg-main {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://c0.wallpaperflare.com/preview/98/565/296/gosclf0t64k3vi9o2podgkh1ev.jpg');
+      /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  <div class="bg-main min-h-screen flex justify-center items-center">
+    <div
+      class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl px-10 py-10 text-center max-w-md w-full border border-white/20 ring-1 ring-white/10 rounded-xl shadow-lg px-10 py-10 text-center max-w-md w-full border border-gray-300">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">✨JavaScript Counter✨</h1>
+      <div id="counter"
+        class="text-6xl font-bold text-gray-900 mb-10 border border-gray-300 rounded-md py-4 bg-white/60">
+        0
+      </div>
+
+      <div class="flex justify-around gap-2">
+        <button onclick="decrement()" type="button"
+          class="relative cursor-pointer px-6 py-2 text-white font-bold uppercase rounded-xl bg-white/10 backdrop-blur-md border border-pink-400 shadow-lg hover:shadow-pink-500/40 hover:scale-105 hover:bg-pink-500/30 transition-all duration-300 ease-in-out">
+          🔽
+        </button>
+
+        <!-- Reset Button -->
+        <button onclick="reset()" type="reset"
+          class="relative cursor-pointer px-6 py-2 text-white font-bold uppercase rounded-xl bg-white/10 backdrop-blur-md border border-cyan-400 shadow-lg hover:shadow-cyan-500/40 hover:scale-105 hover:bg-cyan-500/30 transition-all duration-300 ease-in-out">
+          🔄 Reset
+        </button>
+
+        <!-- Increment Button -->
+        <button onclick="increment()" type="button"
+          class="relative cursor-pointer px-6 py-2 text-white font-bold uppercase rounded-xl bg-white/10 backdrop-blur-md border border-emerald-400 shadow-lg hover:shadow-emerald-500/40 hover:scale-105 hover:bg-emerald-500/30 transition-all duration-300 ease-in-out">
+          🔼
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

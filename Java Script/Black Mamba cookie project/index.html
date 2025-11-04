@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Black Mamba Jewellery | Black Jewellery Only |</title>
+</head>
+<style>
+        #cookieConsent {
+        animation: slideUp 0.5s ease-out;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+
+    #acceptCookies:hover {
+        background-color: #f0f0f0 !important;
+    }
+
+    #rejectCookies:hover {
+        background-color: rgba(255,255,255,0.1) !important;
+    }
+    .cookie-toggle {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 40px;
+        height: 20px;
+        background: #ddd;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .cookie-toggle:checked {
+        background: #4CAF50;
+    }
+    
+    .cookie-toggle:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+    
+    .cookie-toggle:checked:after {
+        left: calc(100% - 18px);
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+</style>
+<body>
+    <!-- Cookie Consent Banner -->
+<!-- Cookie Consent Banner -->
+<div id="cookieConsent" class="fixed bottom-0 left-0 right-0 bg-black text-white p-4 z-50" style="display: none;">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <p class="mb-4 md:mb-0 text-sm">We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies.</p>
+        <div class="flex gap-4">
+            <button id="acceptCookies" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition">Accept</button>
+            <button id="rejectCookies" class="border border-white px-4 py-2 rounded hover:bg-gray-800 transition">Reject</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cookieSettings" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg max-w-md w-full">
+        <h3 class="text-xl font-bold mb-4">Cookie Preferences</h3>
+        <div class="mb-4">
+            <div class="flex items-center justify-between mb-2">
+                <label class="font-medium">Essential Cookies</label>
+                <input type="checkbox" class="cookie-toggle" id="essentialCookies" checked disabled>
+            </div>
+            <p class="text-sm text-gray-600">These cookies are necessary for the website to function and cannot be switched off.</p>
+        </div>
+        <div class="mb-4">
+            <div class="flex items-center justify-between mb-2">
+                <label class="font-medium">Analytics Cookies</label>
+                <input type="checkbox" class="cookie-toggle" id="analyticsCookies">
+            </div>
+            <p class="text-sm text-gray-600">Allow us to analyze website usage to improve performance.</p>
+        </div>
+        <div class="mb-4">
+            <div class="flex items-center justify-between mb-2">
+                <label class="font-medium">Marketing Cookies</label>
+                <input type="checkbox" class="cookie-toggle" id="marketingCookies">
+            </div>
+            <p class="text-sm text-gray-600">Used to track visitors across websites for advertising purposes.</p>
+        </div>
+        <div class="flex justify-end gap-4">
+            <button id="saveCookieSettings" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">Save Preferences</button>
+            <button id="cancelCookieSettings" class="border border-black px-4 py-2 rounded hover:bg-gray-100 transition">Cancel</button>
+        </div>
+    </div>
+</div>
+
+    <!-- div -->
+    <div class="text-[12px] text-white p-3 bg-black text-center max-sm:w-200 max-sm:text-[15px] max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <h1>SALE : BUY 1 GET 1 FREE &nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp JUST ADD 2 ITEMS TO CART</h1>
+    </div>
+    <!-- div -->
+
+    <!-- header -->
+    <header class="h-[687px] pt-3 max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320"
+        style="background-image: url(./img/money_magnect_1920_x_1080_px.jpg); background-position: center; background-size: cover;">
+        <nav class="flex justify-between items-center">
+            <div class="ml-13 max-lg:ml-5">
+                <img src="./img/bBLACK_MAMBA_w_05261145-ac06-4e85-b777-c67c1625df41_480x.png" alt=""
+                    class="w-[180px] h-[64px]">
+            </div>
+            <ul class="flex text-white text-[14px] gap-8 px-12 max-sm:hidden max-md:hidden max-lg:gap-5 max-lg:px-5">
+                <li class="cursor-pointer">NATURAL STONE JEWELLERY</li>
+                <li class="cursor-pointer">SPIRITUAL JEWELLERY</li>
+                <li class="cursor-pointer">ABOUT US</li>
+                <li class="cursor-pointer">ACCOUNT</li>
+            </ul>
+            <div class="flex gap-5 pr-13 cursor-pointer ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/></svg>
+                <a href="cart.html" target="_blank" class="underline hover:text-yellow-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg></a>
+            </div>
+            <div class="hidden max-sm:flex max-sm:mr-7 max-md:flex max-md:mr-7 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+
+
+    <!-- ṇothing -->
+    <div class="flex flex-col items-center max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <h1 class="text-[15px] mt-8 max-sm:text-[35px] max-md:text-[20px] max-lg:text-[20px] max-xl:text-[20px]">NOTHING, BUT BLACK &#x1F5A4;</h1>
+        <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-3"></span>
+    </div>
+    <!-- ṇothing -->
+
+
+    <!-- collection -->
+    <div class="px-23 mt-5 max-sm:w-200 max-sm:px-10 max-md:w-196 max-md:px-5 max-lg:w-256 max-lg:px-5 max-xl:px-5 max-xl:w-320">
+        <div class="py-4">
+            <h1 class="text-[25px] max-sm:text-[50px]">FEATURED COLLECTION</h1>
+        </div>
+        <div class="flex justify-between max-sm:flex-wrap max-sm:gap-3 max-md:flex-wrap">
+            <div class="main w-[24%] max-sm:w-[45%]">
+                <img src="./img/img-1.jpg" alt="" class="h-80 max-sm:h-81 max-md:h-45 max-lg:h-59 max-xl:h-74">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Tucano Chain</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,299.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[30px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0"/>
+                        </path>
+                    </svg>
+                    <p>72 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[25px]">2 COLORS AVALIABLE</h4>
+                <div class="flex justify-center gap-2 mt-1">
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-black rounded-full"></span>
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-[#e5e5e5] rounded-full"></span>
+                </div>
+                <div class="button flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 mt-1 max-sm:mt-12 max-md:px-10 max-md:mt-5 max-lg:px-18">QUICK
+                        ADD</button>
+                </div>
+            </div>
+
+
+            <div class="w-[24%] max-sm:w-[45%]">
+                <img src="./img/img-2.png" alt="">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Black Mamba Men's Tucano Bracelet</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹999.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[30px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>94 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[25px]">2 COLORS AVALIABLE</h4>
+                <div class="flex justify-center gap-2 mt-1">
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-black rounded-full"></span>
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-[#e5e5e5] rounded-full"></span>
+                </div>
+                <div class="flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18">QUICK
+                        ADD</button>
+                </div>
+            </div>
+
+
+            <div class="w-[24%] max-sm:w-[45%]">
+                <img src="./img/img-3.jpg" alt="">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[29px]">Signature snake Pendant with jared chain</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,299.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[30px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>5 reviews</p>
+                </div>
+                <h3 class="text-center"><i class="text-[13px] max-sm:text-[30px]">Sold Out</i></h3>
+                <div class="flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 mt-6 max-md:px-10 max-sm:mt-11 max-md:mt-6 max-xl:mt-6 max-lg:px-18 max-lg:mt-1">QUICK
+                        ADD</button>
+                </div>
+            </div>
+
+
+            <div class="w-[24%] max-sm:w-[45%]">
+                <img src="./img/img-4.jpg" alt="">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Tucano Chain</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,299.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[30px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>72 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[25px]">2 COLORS AVALIABLE</h4>
+                <div class="flex justify-center gap-2 mt-1">
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-black rounded-full"></span>
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-[#e5e5e5] rounded-full"></span>
+                </div>
+                <div class="flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 max-sm:mt-16 max-md:px-10 max-md:mt-6 max-lg:px-18">QUICK
+                        ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- collection -->
+
+
+
+    <!-- premium -->
+    <div class="flex flex-col items-center max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <h1 class="text-[15px] mt-8 max-sm:text-[35px] max-md:text-[20px] max-lg:text-[20px] max-xl:text-[20px]">PREMIUM JEWELERY FOR MEN AND WOMEN</h1>
+        <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-3"></span>
+    </div>
+
+    <div class="flex justify-center mt-10 gap-8 max-sm:w-200 max-md:w-196 max-md:gap-5 max-lg:w-256 max-lg:gap-8 max-xl:w-320">
+        <div class="men w-[46%] relative">
+            <img src="./img/Man.jpg" alt="" class="">
+            <h1 class="text-[23px] text-white absolute bottom-[40%] left-[45%]">MEN</h1>
+        </div>
+        <div class="men w-[46%] relative">
+            <img src="./img/Women.jpg" alt="" class="">
+            <h1 class="text-[23px] text-white absolute bottom-[40%] left-[45%]">WOMEN</h1>
+        </div>
+    </div>
+    <!-- premium -->
+
+    
+    <!-- jwellery -->
+    <div class="flex flex-col items-center max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <h1 class="text-[15px] mt-8 max-sm:text-[40px] max-md:text-[20px] max-lg:text-[20px] max-xl:text-[20px] max-xl:text-[20px]">Men & women jewellery</h1>
+        <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-3"></span>
+        <div class="flex gap-3 mt-8 max-sm:flex-wrap max-sm:justify-center">
+            <button class="py-2 px-3 rounded-full text-[13px] max-sm:text-[24px] max-sm:px-4  bg-[#e2e2e2]">MEN'S CHAIN</button>
+            <button class="py-2 px-3 rounded-full text-[13px] max-sm:text-[24px] max-sm:px-4 ">MEN'S BRACELET</button>
+            <button class="py-2 px-3 rounded-full text-[13px] max-sm:text-[24px] max-sm:px-4 ">MEN'S RING</button>
+            <button class="py-2 px-3 rounded-full text-[13px] max-sm:text-[24px] max-sm:px-4 ">WOMEN'S PENDANT</button>
+            <button class="py-2 px-3 rounded-full text-[13px] max-sm:text-[24px] max-sm:px-4 ">WOMEN'S EARRINGS</button>
+        </div>
+    </div>
+
+
+    <div class="px-23 mt-15 max-sm:w-200 max-sm:px-5 max-md:w-196 max-md:px-5 max-lg:w-256 max-lg:px-5 max-xl:w-320 max-xl:px-5">
+        <div class="flex justify-between max-sm:flex-wrap max-sm:gap-3 ">
+            <div class="main w-[24%] max-sm:w-[48%] ">
+                <img src="./img/img-1.jpg" alt="" class="h-80 max-sm:h-91 max-md:h-43 max-lg:h-59 max-xl:h-74">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Tucano Chain</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,299.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[25px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>72 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[26px]">2 COLORS AVALIABLE</h4>
+                <div class="flex justify-center gap-2 mt-1">
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-black rounded-full"></span>
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-[#e5e5e5] rounded-full"></span>
+                </div>
+                <div class="button flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 max-sm:mt-11 max-md:px-10 max-md:mt-7 max-lg:px-18">QUICK
+                        ADD</button>
+                </div>
+            </div>
+
+
+            <div class="w-[24%] max-sm:w-[48%]">
+                <img src="./img/img-2.png" alt="">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px] ">Black Mamba Men's Tucano Bracelet</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px] ">₹999.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[26px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>94 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[26px]">2 COLORS AVALIABLE</h4>
+                <div class="flex justify-center gap-2 mt-1">
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-black rounded-full"></span>
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-[#e5e5e5] rounded-full"></span>
+                </div>
+                <div class="flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18">QUICK
+                        ADD</button>
+                </div>
+            </div>
+
+
+            <div class="w-[24%] max-sm:w-[48%]">
+                <img src="./img/img-3.jpg" alt="">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Signature snake Pendant with jared chain</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,299.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[26px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>5 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[26px] max-lg:hidden">2 COLORS AVALIABLE</h4>
+                <h3 class="text-center"><i class="text-[13px] max-sm:text-[26px]">Sold Out</i></h3>
+                <div class="flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18 max-lg:mt-1">QUICK
+                        ADD</button>
+                </div>
+            </div>
+
+
+            <div class="w-[24%] max-sm:w-[48%]">
+                <img src="./img/img-4.jpg" alt="">
+                <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Tucano Chain</h3>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,299.00</h4>
+                <div class="flex items-center justify-center mt-1 max-sm:text-[26px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                        </path>
+                    </svg>
+                    <p>72 reviews</p>
+                </div>
+                <h4 class="text-center text-[14px] mt-1 max-sm:text-[26px]">2 COLORS AVALIABLE</h4>
+                <div class="flex justify-center gap-2 mt-1">
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-black rounded-full"></span>
+                    <span class="cursor-pointer inline-block w-5 h-5 bg-[#e5e5e5] rounded-full"></span>
+                </div>
+                <div class="flex justify-center mt-3 mb-1 bg-white">
+                    <button
+                        class="cursor-pointer border-1 py-2 px-26 hover:bg-black hover:text-white duration-300 max-sm:mt-16 max-md:px-10 max-md:mt-5 max-lg:px-18">QUICK
+                        ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jwellery -->
+
+
+    
+    <!-- world -->
+    <div class="flex justify-center items-center mt-15 w-[100%] h-120 max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320"
+        style="background-image: url(./img/Black.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <h1 class="text-white text-[35px]">WELCOME TO THE WORLD OF BLACK MAMBA</h1>
+    </div>
+    <!-- world -->
+
+
+    <!-- about mamba -->
+    <div class="flex flex-col items-center px-15 max-sm:w-200  max-sm:px-3 max-md:w-196 max-md:px-5 max-lg:w-256 max-lg:px-5 max-xl:w-320 max-xl:px-5">
+        <h1 class="text-[15px] mt-8 max-sm:text-[35px] max-md:text-[20px] max-lg:text-[20px] max-xl:text-[20px]">About Black Mamba</h1>
+        <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-3"></span>
+        <p class="text-center text-[14px] mt-5 font-semibold max-sm:text-[25px] max-md:text-[15px] ">Black Mamba Jewellery is a premium jewellery brand
+            offering a versatile range of designs for men and women. Our collection includes necklaces, bracelets,
+            earrings, rings, and pendants, all crafted from high-quality materials to ensure durability, style, and
+            comfort.</p>
+        <p class="text-center text-[14px] mt-2 font-semibold max-sm:text-[25px] max-md:text-[15px] ">With a focus on modern aesthetics and fine craftsmanship,
+            we cater to those who value timeless and trendy jewellery. Trusted by over 1 lakh satisfied customers, Black
+            Mamba has become a go-to destination for those seeking premium jewellery at affordable prices. Whether
+            you're looking to elevate your style or find the perfect gift, our collection has something for everyone.
+        </p>
+    </div>
+    <!-- about mamba -->
+
+    <!-- ring -->
+    <div class="mt-10 max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <img src="./img/ring.jpg" alt="">
+    </div>
+    <!-- ring -->
+
+
+    <!-- luxry -->
+    <div class="flex gap-8 px-25 mt-12 max-sm:w-200 max-sm:flex-col max-sm:flex-col-reverse max-sm:px-10 max-md:w-196 max-md:px-5 max-lg:w-256 max-lg:px-5 max-xl:w-320 max-xl:px-5">
+        <div class="flex flex-col items-center justify-center gap-4 w-[60%] max-sm:w-[100%]">
+                <h1 class="text-[15px] mt-8 max-sm:text-[30px] max-lg:text-[20px] max-xl:text-[20px]">LUXURY PACKAGING</h1>
+                <span class="inline-block w-10 h-1 bg-[#bebebe] rounded "></span>
+                <p class="text-center text-[13px] max-sm:text-[25px]">At Black Mamba Jewellery, we believe that packaging is just as important as the product itself. That's why we take great care in packaging our jewellery to ensure that it arrives to our customers in perfect condition.</p>
+                <p class="text-center text-[13px] max-sm:text-[25px]">All of our jewellery comes packaged in a beautiful sleeve pouch, which not only protects the piece but also adds a touch of luxury.</p>
+        </div>
+        <div class="w-[60%] max-sm:w-[100%] max-md:w-[70%]">
+            <img src="./img/Primium.jpg" alt="">
+        </div>
+    </div>
+    <!-- luxry -->
+
+    <!-- commitments -->
+     <div class="w-[100%] bg-black mt-13 py-5 max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <div class="flex flex-col items-center text-white">
+            <h1 class="text-[15px] mt-8 max-md:text-[25px] max-lg:text-[20px] max-xl:text-[20px]">our commitments</h1>
+            <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-3"></span>
+        </div>
+        <div class="flex justify-center gap-3 text-white text-center mt-5">
+            <div class="flex flex-col items-center w-[29%] py-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" class="mb-3"><path fill="#a9a9a9" d="M142.9 142.9c-17.5 17.5-30.1 38-37.8 59.8c-5.9 16.7-24.2 25.4-40.8 19.5s-25.4-24.2-19.5-40.8C55.6 150.7 73.2 122 97.6 97.6c87.2-87.2 228.3-87.5 315.8-1L455 55c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2l0 128c0 13.3-10.7 24-24 24l-8.4 0c0 0 0 0 0 0L344 224c-9.7 0-18.5-5.8-22.2-14.8s-1.7-19.3 5.2-26.2l41.1-41.1c-62.6-61.5-163.1-61.2-225.3 1zM16 312c0-13.3 10.7-24 24-24l7.6 0 .7 0L168 288c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-41.1 41.1c62.6 61.5 163.1 61.2 225.3-1c17.5-17.5 30.1-38 37.8-59.8c5.9-16.7 24.2-25.4 40.8-19.5s25.4 24.2 19.5 40.8c-10.8 30.6-28.4 59.3-52.9 83.8c-87.2 87.2-228.3 87.5-315.8 1L57 457c-6.9 6.9-17.2 8.9-26.2 5.2S16 449.7 16 440l0-119.6 0-.7 0-7.6z"/></svg>
+                <h2>HASSLE Free exchange</h2>
+                <p class="text-[13px] mt-2 text-[#a9a9a9]">Hassle free exchange within 7 days after delivery</p>
+            </div>
+            <div class="flex flex-col items-center w-[29%] py-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" class="mb-3"><path fill="#a9a9a9" d="M3.75 2a.75.75 0 0 0-.662.397l-2 3.75a.75.75 0 0 0 .071.815l4.934 6.316A3.3 3.3 0 0 1 6 12.5a2.5 2.5 0 0 1 1.451-2.27L6.598 7.5h.943A3 3 0 0 1 8.264 6H6.398l.625-2.5h1.954l.427 1.707a3 3 0 0 1 1.5-.18l-.38-1.527H11.8L13.133 6h-.397a2.99 2.99 0 0 1 .649 2.825l1.456-1.863a.75.75 0 0 0 .07-.815l-2-3.75A.75.75 0 0 0 12.25 2zm-.883 4L4.2 3.5h1.277L4.852 6zm.616 1.5h1.544l1.029 3.293zM12.5 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S7 13.75 7 12.5A1.5 1.5 0 0 1 8.5 11h4a1.5 1.5 0 0 1 1.5 1.5" stroke-width="0.2" stroke="#a9a9a9"/></svg>
+                <h2>PREMIUM QUALITY</h2>
+                <p class="text-[13px] mt-2 text-[#a9a9a9]">All are products are quality checked before shipping</p>
+            </div>
+            <div class="flex flex-col items-center w-[29%]  py-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 512" class="mb-3"><path fill="#a9a9a9" d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16M160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48m320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48m80-208H416V144h44.1l99.9 99.9z" stroke-width="13" stroke="#a9a9a9"/></svg>
+                <h2>FREE SHIPPING</h2>
+                <p class="text-[13px] mt-2 text-[#a9a9a9]">Free express shipping pan India.</p>
+            </div> 
+        </div>
+     </div>
+    <!-- commitments -->
+
+
+    <!-- brand -->
+     <div class="flex flex-col gap-3 px-15 mt-10 max-sm:w-200 max-md:w-196 max-md:px-5 max-lg:w-256 max-lg:px-5 max-xl:w-320 max-xl:px-5">
+        <h2 class="text-[14px] max-sm:text-[30px] max-lg:text-[18px]">WHY THE BRAND NAME "BLACK MAMBA"?</h2>
+        <p class="text-[13px] max-sm:text-[25px]"><i>&nbsp&nbsp The name "Black Mamba" has been chosen for the brand because of the snake's reputation as a powerful, fast and deadly predator. The black color of the snake also aligns well with the theme of the brand being black jewellery. Additionally, the black mamba snake is also known for its elegance and sleekness, which can be a great representation of the brand's jewellery design as well.</i></p>
+     </div>
+    <!-- brand -->
+
+
+    <!-- blogs -->
+     <div class="w-[100%]  bg-[#eeeeee] mt-10 py-10 max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[15px] max-sm:text-[30px] max-md:text-[20px] max-lg:text-[20px] max-xl:text-[20px]">OUR BLOGS</h1>
+            <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-4"></span>
+        </div>
+        <div class="flex justify-center gap-5 mt-10 ">
+            <div class="flex flex-col gap-2 w-[46%] ">
+                <img src="./img/Blog-1.png" alt="" class="w-full">
+                <h4 class="text-[13px] font-[400] mt-2">January 23, 2023</h4>
+                <p class="text-[23px]">Tips for Caring for Your Black Mamba Brass Jewellery</p>
+                <p class="text-[14px] font-[400]">Brass jewellery is a popular and stylish choice, but it does require some care and maintenance to keep it looking its best. Proper care of...</p>
+                <a href=""><i>Read more</i></a>
+            </div>
+            <div class="flex flex-col gap-2 w-[46%]">
+                <img src="./img/BLog-2.png" alt="" class="w-full">
+                <h4 class="text-[13px] font-[400] mt-2">January 23, 2023</h4>
+                <p class="text-[23px]">"Unleash Your Inner Edge with Black Mamba Jewellery's Men's Black Jewellery Collection</p>
+                <p class="text-[14px] font-[400]">Black Mamba Jewellery offers a wide range of black colored jewellery for men that combines style and elegance. Our collection features an array of unique...</p>
+                <a href=""><i>Read more</i></a>
+            </div>
+        </div>
+     </div>
+    <!-- blogs -->
+
+
+    <!-- Product -->
+     <div class="mt-10 max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[15px] max-sm:text-[30px] max-md:text-[20px] max-lg:text-[20px] max-xl:text-[20px]">FEATURED PRODUCTS</h1>
+            <span class="inline-block w-10 h-1 bg-[#bebebe] rounded mt-4"></span>
+        </div>
+
+        <div class="px-15 mt-15 max-sm:px-5 max-md:px-5 max-lg:px-5 max-xl:px-5">
+            <div class="flex justify-between max-sm:flex-wrap max-sm:gap-5 ">
+                <div class="main w-[24%] max-sm:w-[45%]">
+                    <img src="./img/pro-1.jpg" alt="">
+                    <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Flare Ring</h3>
+                    <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,199.00</h4>
+                   
+                    <div class="button flex justify-center mt-3 mb-1 bg-white mt-10">
+                        <button
+                            class="cursor-pointer border-1 py-2 px-30 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18 max-xl:px-25">QUICK
+                            ADD</button>
+                    </div>
+                </div>
+    
+    
+                <div class="w-[24%] max-sm:w-[45%]">
+                    <img src="./img/pro-2.jpg" alt="">
+                    <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Cargo Ring</h3>
+                    <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,199.00</h4>
+                    <div class="flex items-center justify-center mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                            </path>
+                        </svg>
+                        <p>94 reviews</p>
+                    </div>
+                    <div class="flex justify-center mt-3 mb-1 bg-white">
+                        <button
+                            class="cursor-pointer border-1 py-2 px-30 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18 max-xl:px-25">QUICK
+                            ADD</button>
+                    </div>
+                </div>
+    
+    
+                <div class="w-[24%] max-sm:w-[45%]">
+                    <img src="./img/pro-3.jpg" alt="">
+                    <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Nebula Ring</h3>
+                    <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,199.00</h4>
+                    
+                    <div class="flex justify-center mt-3 mb-1 bg-white mt-10">
+                        <button
+                            class="cursor-pointer border-1 py-2 px-30 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18 max-xl:px-25">QUICK
+                            ADD</button>
+                    </div>
+                </div>
+    
+    
+                <div class="w-[24%] max-sm:w-[45%]">
+                    <img src="./img/pro-4.jpg" alt="">
+                    <h3 class="text-center text-[14px] mt-3 max-sm:text-[30px]">Men's Sake Glossy Ring</h3>
+                    <h4 class="text-center text-[14px] mt-1 max-sm:text-[30px]">₹1,199.00</h4>
+                    <div class="flex items-center justify-center mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#000"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#000" stroke-dasharray="36" stroke-dashoffset="36"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
+                            </path>
+                        </svg>
+                        <p>72 reviews</p>
+                    </div>
+                   
+                    <div class="flex justify-center mt-3 mb-1 bg-white">
+                        <button
+                            class="cursor-pointer border-1 py-2 px-30 hover:bg-black hover:text-white duration-300 max-md:px-10 max-lg:px-18 max-xl:px-25">QUICK
+                            ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Product -->
+
+
+    <!-- footer -->
+     <footer class="flex mt-10 max-sm:w-200 max-sm:flex-col max-md:w-196 max-md:flex-col max-lg:w-256 max-xl:w-320">
+        <div class="flex justify-center w-[60%] bg-black py-20  max-sm:w-[100%] max-sm:px-10 max-md:w-[100%] max-md:px-0">
+            <div class="w-[45%] max-sm:w-[100%] ">
+                <img src="./img/bBLACK_MAMBA_w_05261145-ac06-4e85-b777-c67c1625df41_480x.png" alt="" class="w-45">
+                <ul class="flex flex-col gap-3 text-white text-[13px] max-sm:text-[21px] " style="font-family: sans-serif;">
+                    <li class="mt-20 text-[15px] max-sm:text-[25px]"><a href="">QUICK LINKS</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">FAQ'S</a></li>
+                    <li><a href="">SHIPPING</a></li>
+                    <li><a href="">EXCHANGES AND RETURNS</a></li>
+                    <li><a href="">CORPORATE/BULK ORDERS</a></li>
+                    <li><a href="">JEWELLERY CARE</a></li>
+                    <li><a href="">PRIVACY POLICY</a></li>
+                    <li><a href="">TERMS OF SERVICE</a></li>
+                    <li><a href="">TRACK YOUR ORDER</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-center gap-4 w-[45%] text-white text-[14px] max-sm:w-[100%] max-sm:text-[25px] max-md:text-[17px]">
+                <h3 class="max-md:text-[20px]">ABOUT BLACK MAMBA</h3>
+                <p><i>Explore the pinnacle of luxury with our curated selection of jewelry pieces meticulously crafted for both genders. With an extensive network of over 50,000 delighted clientele worldwide, our brand symbolizes excellence, offering unrivaled quality and enduring elegance. 💍🌟</i></p>
+                <h4>Customer Care: support@blackmambajewellery.com</h4>
+                <h4> +91 99299 99999</h4>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center gap-5 pl-9 w-[40%] max-sm:w-[100%] max-sm:py-10 max-md:w-196 max-md:py-10">
+            <h1 class="text-[#737373] text-[30px] max-sm:text-[40px] max-md:text-[40px] max-lg:text-[22px]">Exclusive offers straight to your inbox</h1>
+            <p class="text-[#737373] text-[13px] max-sm:text-[25px] max-md:text-[20px]">Join to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+            <input type="email" placeholder="your-email@example.com" class="border-b-1 w-[91%] py-2 outline-hidden">
+        </div>
+     </footer>
+
+     <div class="bg-black text-white py-7 px-15 text-[15px] max-sm:w-200 max-md:w-196 max-lg:w-256 max-xl:w-320 ">
+        <p class="max-sm:text-center max-md:text-center max-lg:text-center">© HOUSE OF BLACK MAMBA 2025 TERMS OF SERVICE PRIVACY POLICY</p>
+     </div>
+    <!-- footer -->
+     <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2 id="box">Starting...</h2>
+        <button id="btn">Stop</button>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" color="white">
+                <path fill="currentColor" d="m12 16l4-5h-3V4h-2v7H8z" />
+                <path fill="currentColor" d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 48 48" color="white">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                    d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        let arr = [
+            "Dream big. Start small. Act now!",
+            "Every day is a fresh start.",
+            "Stay hungry, stay foolish.",
+            "Code. Coffee. Repeat.",
+            "Be the energy you want to attract."
+        ];
+
+        let num = 0;
+        let box = document.getElementById("box");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", () => {
+            clearInterval(interval); 
+        });
+
+        let interval = setInterval(() => {
+            num += 1;
+            if (num >= arr.length) {
+                num = 0;
+            }
+            box.textContent = arr[num];
+        }, 2000);
+    </script>
+</body>
+
+</html>

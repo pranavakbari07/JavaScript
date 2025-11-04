@@ -1,0 +1,26 @@
+1. What is OOP in JS?
+=> OOP refer to those programming languages that mostly use project OOP basically refers real life entities/set up like inheritance, hiding and polymorphism.
+
+2. Why is OOP Important?
+=> oop helps to bind data and function that operate on them so other code can not access that data exept those function.
+
+3. Class Defination :-
+=> A class is like a blueprint for creating object.think of it as temeplate.It defines the Properties and method tht an object created from the class will have.
+
+4. What is a consttructor in js?
+=> A consttructor is a special function that create and initialize an object instance of a class in java script a consttructor gets called when an ovject is created using the new keyword.
+
+5. Creating Object :-
+=> An object is an instance of a class you create an object using the new keyword.
+
+6. What is the keyword?
+=> This keyword refers to the object that is currently executing the code in the context of a class, this refers to the instance of the calss.
+
+7. What does new do?
+=> The new keyword is use to create an instance of a class. when you use new, it does the following. 
+   1.create a new empty object.
+   2.Blind this to the new object.
+   3.Sets up the new object.
+   4.Calls the constructor function to initialize the object.
+
+   

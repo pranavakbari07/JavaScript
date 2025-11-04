@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.men{
+    clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+}
+.main{
+    height: 550px;
+    border-radius: 8px;
+    background-image: url(./img/main-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card::-webkit-scrollbar{
+    display: none;
+}
+.latest{
+    background-image: url(./img/main-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}

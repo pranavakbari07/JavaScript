@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown & Quotes App 🌟</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      text-align: center;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    #countdown {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    #quoteBox {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 22px;
+    }
+
+    #quoteBox p {
+      margin-bottom: 15px;
+    }
+
+    #newQuoteBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077ff;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #newQuoteBtn:hover {
+      background-color: #0055cc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>⏳ Countdown to 2026 🎉</h1>
+  <div id="countdown">Loading...</div>
+
+  <div id="quoteBox">
+    <p id="quoteText">Loading quote...</p>
+    <p id="quoteAuthor"></p>
+    <button id="newQuoteBtn">✨ New Quote</button>
+  </div>
+
+  <script>
+    // COUNTDOWN ⏳
+    const countdown = document.getElementById("countdown");
+    const target = new Date("2026-01-01T00:00:00").getTime();
+
+    const updateCountdown = () => {
+      const gap = target - Date.now();
+      if (gap <= 0) return countdown.textContent = "🎊 Happy New Year 2026!";
+
+      const s = Math.floor(gap / 1000),
+        d = Math.floor(s / 86400),
+        h = Math.floor((s % 86400) / 3600),
+        m = Math.floor((s % 3600) / 60),
+        sec = s % 60;
+
+      countdown.textContent = `${d} Days ${h} Hrs ${m} Min ${sec} Sec`;
+    };
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // QUOTES ✨
+    const quotes = [
+      { text: "Success is not final, failure is not fatal.", author: "Winston Churchill" },
+      { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+      { text: "Your time is limited, don’t waste it.", author: "Steve Jobs" },
+      { text: "Push yourself, no one else will.", author: "Unknown" },
+      { text: "Great things never come from comfort zones.", author: "Unknown" },
+      { text: "Dream it. Wish it. Do it.", author: "Unknown" },
+      { text: "Don’t watch the clock. Keep going.", author: "Sam Levenson" },
+      { text: "Best time to plant a tree was 20 yrs ago.", author: "Chinese Proverb" }
+    ];
+
+    const qText = document.getElementById("quoteText"),
+      qAuthor = document.getElementById("quoteAuthor"),
+      btn = document.getElementById("newQuoteBtn");
+
+    const showQuote = () => {
+      let q = quotes[Math.floor(Math.random() * quotes.length)];
+      qText.textContent = `"${q.text}"`;
+      qAuthor.textContent = `— ${q.author}`;
+    };
+
+    btn.onclick = showQuote;
+    showQuote();
+  </script>
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+
+        #box {
+            width: 100%;
+            height: 710px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        #img {
+            width: 99%;
+            height: 640px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 1px solid;
+        }
+
+        .btn1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="box">
+            <img src="img-1.jpg" id="img" alt="Image not found">
+            <div class="btn1">
+                <button class="btn" onclick="slideLeft()">Left</button>
+                <button class="btn" onclick="slideRight()">Right</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let img = document.querySelector("#img");
+        let arr = ["img-1.jpg", "img-2.jpg", "img-3.jpg", "img-4.jpg", "img-5.jpg"];
+
+
+        let i = 0;
+
+        function slideRight() {
+            i++;
+            if (i >= arr.length) i = 0;
+            img.src = arr[i];
+        }
+
+        function slideLeft() {
+            i--;
+            if (i < 0) i = arr.length - 1;
+            img.src = arr[i];
+        }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
